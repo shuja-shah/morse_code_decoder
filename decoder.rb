@@ -24,3 +24,5 @@ puts decode_morse_word('.- -... -.-. -.. .')
 def decode_morse_message(morse_message)
   morse_message.split('  ').map { |morse_word| decode_morse_word(morse_word) }.join(' ')
 end
+
+print decode_morse_message('.- -... -.-. -.. .  .-.. .- --.. -.--  - .... .  .. ...  .-- --- .-. .-.. -..')
